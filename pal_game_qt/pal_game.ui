@@ -1,0 +1,681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Controller</class>
+ <widget class="QMainWindow" name="Controller">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1440</width>
+    <height>809</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1440</width>
+    <height>809</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Controller</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/images/images/icon.png</normaloff>:/images/images/icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="maximumSize">
+    <size>
+     <width>1440</width>
+     <height>809</height>
+    </size>
+   </property>
+   <widget class="QWidget" name="StartWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1440</width>
+      <height>809</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget#StartWidget{border-image: url(:/images/images/StartBackground.jpg)};</string>
+    </property>
+    <widget class="QPushButton" name="GameStart">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>540</y>
+       <width>50</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/images/images/GameStart.png</normaloff>:/images/images/GameStart.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>45</width>
+       <height>180</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Instruction">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>550</y>
+       <width>50</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/images/images/Instruction.png</normaloff>:/images/images/Instruction.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="GameExit">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>540</y>
+       <width>50</width>
+       <height>200</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/images/images/GameExit.png</normaloff>:/images/images/GameExit.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>200</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QTabWidget" name="InstructWindow">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>100</y>
+       <width>648</width>
+       <height>492</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTabWidget:pane {border-top:0px solid #e8f3f9; background:transparent; }</string>
+     </property>
+     <widget class="QWidget" name="tab">
+      <property name="styleSheet">
+       <string notr="true">image: url(:/images/images/游戏说明1.png);</string>
+      </property>
+      <attribute name="title">
+       <string>Tab 1</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <property name="styleSheet">
+       <string notr="true">image: url(:/images/images/游戏说明2.png);</string>
+      </property>
+      <attribute name="title">
+       <string>Tab 2</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <property name="styleSheet">
+       <string notr="true">image: url(:/images/images/游戏说明3.png);</string>
+      </property>
+      <attribute name="title">
+       <string>页</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <property name="styleSheet">
+       <string notr="true">image: url(:/images/images/游戏说明4.png);</string>
+      </property>
+      <attribute name="title">
+       <string>页</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_5">
+      <property name="styleSheet">
+       <string notr="true">image: url(:/images/images/子弹说明.png);</string>
+      </property>
+      <attribute name="title">
+       <string>页</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_6">
+      <property name="styleSheet">
+       <string notr="true">image: url(:/images/images/敌军说明.png);</string>
+      </property>
+      <attribute name="title">
+       <string>页</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_7">
+      <property name="styleSheet">
+       <string notr="true">image: url(:/images/images/药品说明.png);</string>
+      </property>
+      <attribute name="title">
+       <string>页</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_8">
+      <property name="styleSheet">
+       <string notr="true">image: url(:/images/images/武器说明.png);</string>
+      </property>
+      <attribute name="title">
+       <string>页</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_9">
+      <property name="styleSheet">
+       <string notr="true">image: url(:/images/images/防具说明.png);</string>
+      </property>
+      <attribute name="title">
+       <string>页</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_10">
+      <property name="styleSheet">
+       <string notr="true">image: url(:/images/images/鞋子说明.png);</string>
+      </property>
+      <attribute name="title">
+       <string>页</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_11">
+      <property name="styleSheet">
+       <string notr="true">image: url(:/images/images/buff说明.png);</string>
+      </property>
+      <attribute name="title">
+       <string>页</string>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="LastPage">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>340</y>
+       <width>17</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/images/images/LastPage.png</normaloff>:/images/images/LastPage.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>17</width>
+       <height>26</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="NextPage">
+     <property name="geometry">
+      <rect>
+       <x>1060</x>
+       <y>340</y>
+       <width>17</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/images/images/NextPage.png</normaloff>:/images/images/NextPage.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>17</width>
+       <height>26</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Close">
+     <property name="geometry">
+      <rect>
+       <x>1030</x>
+       <y>70</y>
+       <width>24</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/images/images/close.png</normaloff>:/images/images/close.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="setConfig">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>91</width>
+       <height>78</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/images/images/setConfig.png</normaloff>:/images/images/setConfig.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>91</width>
+       <height>78</height>
+      </size>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QWidget" name="Config" native="true">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>130</y>
+       <width>571</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/images/images/Config.png);</string>
+     </property>
+     <widget class="QRadioButton" name="openSound">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>150</y>
+        <width>115</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>开</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="closeSound">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>180</y>
+        <width>115</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>关</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="confirmConfig">
+      <property name="geometry">
+       <rect>
+        <x>253</x>
+        <y>230</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="cancelConfig">
+      <property name="geometry">
+       <rect>
+        <x>346</x>
+        <y>230</y>
+        <width>81</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <zorder>GameStart</zorder>
+    <zorder>Instruction</zorder>
+    <zorder>GameExit</zorder>
+    <zorder>LastPage</zorder>
+    <zorder>NextPage</zorder>
+    <zorder>Close</zorder>
+    <zorder>InstructWindow</zorder>
+    <zorder>setConfig</zorder>
+    <zorder>Config</zorder>
+   </widget>
+   <widget class="QGraphicsView" name="RunningView">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1440</width>
+      <height>809</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/images/images/Map.png);</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="sceneRect">
+     <rectf>
+      <x>0.000000000000000</x>
+      <y>0.000000000000000</y>
+      <width>1440.000000000000000</width>
+      <height>809.000000000000000</height>
+     </rectf>
+    </property>
+   </widget>
+   <widget class="QWidget" name="Continue" native="true">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>100</y>
+      <width>500</width>
+      <height>418</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/images/images/Continue.png);</string>
+    </property>
+    <widget class="QPushButton" name="Yes">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>310</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="No">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>310</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="Atribute">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>1150</x>
+      <y>0</y>
+      <width>291</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/images/images/Attribute.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QWidget" name="GameOver" native="true">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>100</y>
+      <width>500</width>
+      <height>418</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/images/images/GameOver.png);</string>
+    </property>
+    <widget class="QPushButton" name="Confirm">
+     <property name="geometry">
+      <rect>
+       <x>214</x>
+       <y>310</y>
+       <width>71</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="GamePass">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>77</y>
+      <width>500</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget:pane {border-top:0px solid #e8f3f9; background:transparent; }</string>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="Pass1">
+     <property name="styleSheet">
+      <string notr="true">image: url(:/images/images/Pass1.png);</string>
+     </property>
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QPushButton" name="GamePassConfirm_1">
+      <property name="geometry">
+       <rect>
+        <x>221</x>
+        <y>310</y>
+        <width>71</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Pass2">
+     <property name="styleSheet">
+      <string notr="true">image: url(:/images/images/Pass2.png);</string>
+     </property>
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+     <widget class="QPushButton" name="GamePassConfirm_2">
+      <property name="geometry">
+       <rect>
+        <x>221</x>
+        <y>310</y>
+        <width>71</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Pass3">
+     <property name="styleSheet">
+      <string notr="true">image: url(:/images/images/Pass3.png);</string>
+     </property>
+     <attribute name="title">
+      <string>页</string>
+     </attribute>
+     <widget class="QPushButton" name="GamePassConfirm_3">
+      <property name="geometry">
+       <rect>
+        <x>221</x>
+        <y>310</y>
+        <width>71</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Pass4">
+     <property name="styleSheet">
+      <string notr="true">image: url(:/images/images/Pass4.png);</string>
+     </property>
+     <attribute name="title">
+      <string>页</string>
+     </attribute>
+     <widget class="QPushButton" name="GamePassConfirm_4">
+      <property name="geometry">
+       <rect>
+        <x>221</x>
+        <y>310</y>
+        <width>71</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <zorder>RunningView</zorder>
+   <zorder>Continue</zorder>
+   <zorder>GamePass</zorder>
+   <zorder>GameOver</zorder>
+   <zorder>StartWidget</zorder>
+   <zorder>Atribute</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
