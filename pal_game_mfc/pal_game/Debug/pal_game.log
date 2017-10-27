@@ -1,7 +1,0 @@
-﻿  Explode.cpp
-d:\data\高级程序设计\mfc\pal_game\pal_game\explode.cpp(18): warning C4244: “参数”: 从“LONG”转换到“float”，可能丢失数据
-d:\data\高级程序设计\mfc\pal_game\pal_game\explode.cpp(19): warning C4244: “参数”: 从“LONG”转换到“float”，可能丢失数据
-d:\data\高级程序设计\mfc\pal_game\pal_game\explode.cpp(28): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
-d:\data\高级程序设计\mfc\pal_game\pal_game\explode.cpp(34): warning C4553: “==”: 运算符不起任何作用；是否是有意使用“=”的?
-Debug\Explode.obj : warning LNK4042: 对象被多次指定；已忽略多余的指定
-  pal_game.vcxproj -> D:\DATA\高级程序设计\MFC\pal_game\Debug\pal_game.exe
